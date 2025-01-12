@@ -21,7 +21,7 @@ function renderItems(array) {
     });
 }
 console.log(localStorage.getItem('todo'))
-if(localStorage.getItem('todo')== null || '[]'){
+if(localStorage.getItem('todo')== '[]' || null){
     localStorage.setItem('todo', JSON.stringify(["Welcome to TODO"]))
 }
 renderItems(getData())
